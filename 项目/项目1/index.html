@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		body {
+			background: #0c1248;
+		}
+		
+		[v-cloak] {
+			display: none;
+		}
+		
+		.clearfix:after,
+		.clearfix:before {
+			content: "";
+			display: table;
+		}
+		
+		.clearfix:after {
+			clear: both;
+		}
+		
+		.clearfix {
+			*zoom: 1;
+		}
+		
+		.x_li li {
+			float: left;
+			margin-left: 30px;
+			line-height: 60px;
+			color: white;
+		}
+		
+		#time span {
+			font-size: 40px;
+		}
+		
+		#time p {
+			font-size: 20px;
+		}
+		
+		.dianji button {
+			margin-left: 20px;
+			margin-top: 10px;
+			border-color: rgb(28, 141, 255);
+			background-color: rgb(10, 110, 242);
+			background-color: rgb(10, 110, 242);
+			border: none;
+		}
+		
+		#dian button {
+			margin-left: 20px;
+			margin-top: 10px;
+			border: none;
+			border-color: rgb(28, 141, 255);
+			background-color: rgb(10, 110, 242);
+			background-color: rgb(10, 110, 242)
+		}
+		
+		.title ul li:hover {
+			color: #0000FF;
+			border-bottom: 1px solid #0000FF;
+		}
+		
+		#title {
+			background: rgba(12, 18, 72, 0.9);
+		}
+	</style>
+
+	<body onload="fnDate()">
+		<div id="box" v-cloak="">
+			<div class="clearfix" id="title" style="position: fixed; top: 0; margin: 0 auto;">
+				<div style="width: 186px; height: 49px; float: left; margin-left: 200px;">
+					<img style="width: 100%; height: 100%;" src="//5d3969e45410c.t73.qifeiye.com/qfy-content/uploads/2019/07/6c01fb75c2ce26ede8ba05ce70a3057f.png" />
+				</div>
+				<div style="float: left; margin-left:300px;" class="title">
+					<ul style="float: left;" class="x_li">
+						<lee x_content='首页'></lee>
+						<lee x_content='使用流程'></lee>
+						<lee x_content='全球服务'></lee>
+						<lee x_content='关于我们'></lee>
+						<lee x_content='专家团队'></lee>
+						<lee x_content='联系我们'></lee>
+						<lee x_content='合作伙伴'></lee>
+					</ul>
+				</div>
+			</div>
+			<div style="margin-left: 200px; margin-top:100px;" class="clearfix">
+				<div style="width: 379px; height: 379px; float: left;">
+					<div style="width: 379px; height:48px; font-size: 20px; color: white;">
+						<lle x_good='践行惠普金融'></lle>
+					</div>
+					<div style="width: 379px; height:48px; font-size: 20px; color: white;">
+						<lle x_good='助力美好生活'></lle>
+					</div>
+
+					<div m-padding="18px 0 24px 0" p-padding="30px 0 30px 0" css_animation_delay="0" qfyuuid="qfy_column_text_gzi64" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-12767 qfe_text_column qfe_content_element  mobile_fontsize14 " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:30px;padding-bottom:30px;padding-right:0;padding-left:0;border-radius:0px;display:inline-block;max-width:500px;">
+						<div class="qfe_wrapper">
+							<div style="line-height: 30px; letter-spacing: 1px;"><span style="font-size: 14px; color: rgb(255, 255, 255);">我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</span></div>
+							<div style="line-height: 30px; letter-spacing: 1px;"><span style="font-size: 14px; color: rgb(255, 255, 255);">
+				</span></div>
+						</div>
+					</div>
+					<div style="float: left;background-color: rgb(10, 110, 242); background-color: rgb(10, 110, 242);border-color: rgb(28, 141, 255); width: 152px; height: 44px; border-radius: 10px;" class="dianji">
+						<button onmouseleave="this.style.borderColor='#1c8dff'; this.style.backgroundColor='#0a6ef2'; this.style.color='#fff';" onmouseenter="this.style.backgroundColor='#1c8dff'; this.style.borderColor='#0a6ef2'; this.style.color='#fff';" style="font-size: 15px; letter-spacing: 1px; text-indent: 1px; border-width: 1px; border-color: rgb(28, 141, 255); background-color: rgb(10, 110, 242); color: rgb(255, 255, 255);" class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-round vc_btn3-style-qfy-custom">　联系我们 →　</button>
+					</div>
+					<div style="float: left; margin-left: 50px; width: 152px; height: 44px; border-radius: 10px; border: 1px solid blue;" id="dian">
+						<button onmouseleave="this.style.borderColor='#1c8dff'; this.style.backgroundColor='transparent'; this.style.color='#fff';" onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='1c8dff'; this.style.color='#fff';" style="font-size:15px; letter-spacing:1px;text-indent: 1px; border-width:1px; border-color:#1c8dff; background-color:transparent; color:#fff;" class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-round vc_btn3-style-qfy-custom">　点我咨询 →　</button>
+					</div>
+				</div>
+				<div style="float: left; width: 619px; height: 519px; margin-left: 150px;">
+					<img style="width: 100%; height: 100%;" src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvM2Q1MjJlZDZlYTZiM2I2YWEwYmVjNGM3YTBkMjcxNzIucG5n.png" />
+				</div>
+			</div>
+			<lle x_title='使用流程' xx_content='我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。'>
+				<div style="overflow: hidden; margin-left: 170px; margin-top: 80px;">
+					<div v-for="i in arr" style="width: 350px; height: 248px; background: #102a63; float: left; margin-left: 30px;">
+						<div style="margin-top: 90px;">
+							<img :src="i.imgs" />
+							<p style="margin-top: 10px;">{{i.titles}}</p>
+						</div>
+					</div>
+				</div>
+			</lle>
+			<div>
+				<div style=" margin: 0 auto; margin-bottom: 50px;" class="clearfix">
+					<div style="margin-left: 200px; float: left;">
+						<div style="width: 589px; height: 507px; background: #102a63;">
+							<div style="margin: 0 auto; text-align: center; padding-top: 60px; margin-bottom: 50px;">
+								<div class="header_title" style="font-family:f86570e09f7ebb4debe619f726ef491d6;font-size:34px;font-weight:bold;font-style:normal;color:#ffffff;display:block;vertical-align:bottom;">近期货币</div>
+								<div class="header_subtitle" style="font-size:16px;font-weight:normal;font-style:normal;color:#bcd8fd;display:block;padding:2px;vertical-align:bottom;">购买进度</div>
+								<div style="border-bottom: 4px solid #CCCCCC; width:160px; height: 24px; margin: 0 auto;"></div>
+							</div>
+							<div style="margin-left: 150px; color: #ffffff;font-size:30px;" id="time">
+
+							</div>
+							<div style="padding-top:40px; margin-left: 60px; margin-bottom: 70px;">
+								<div id="progressbar" style="background-color: #ffffff;border-radius: 10px;padding: 3px; width: 470px; height: 30px; ">
+									<div style="background-color: #0768ee;width: 80%; height: 30px;border-radius: 10px;;text-align:center;line-height:30px;">
+										<span class="pb_inline_text" style="color:#fff;font-size:14px;">购买进度&nbsp;&nbsp;80&nbsp;%</span>
+									</div>
+								</div>
+							</div>
+							<div style="margin:0 auto;background-color: rgb(10, 110, 242); background-color: rgb(10, 110, 242);border-color: rgb(28, 141, 255); width: 152px; height: 44px; border-radius: 10px;" class="dianji">
+								<button onmouseleave="this.style.borderColor='#1c8dff'; this.style.backgroundColor='#0a6ef2'; this.style.color='#fff';" onmouseenter="this.style.backgroundColor='#1c8dff'; this.style.borderColor='#0a6ef2'; this.style.color='#fff';" style="font-size: 15px; letter-spacing: 1px; text-indent: 1px; border-width: 1px; border-color: rgb(28, 141, 255); background-color: rgb(10, 110, 242); color: rgb(255, 255, 255);" class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-round vc_btn3-style-qfy-custom">　联系我们 →　</button>
+							</div>
+						</div>
+					</div>
+					<div style="width: 465px; height: 510px;float: left; margin-left: 50px;">
+						<div m-padding="62px 0 6px 0" p-padding="0 0 0 0" css_animation_delay="0" qfyuuid="qfy_column_text_mphrg-c-nb" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-12429 qfe_text_column qfe_content_element  mobile_fontsize28 " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-radius:0px;font-family:fa4f158d2176cb8c8c74f5327a66456ad;">
+							<div class="qfe_wrapper">
+								<div style="letter-spacing: 1px; line-height: 40px; margin-left:80px; margin-top: 60px;"><span style="font-size: 32px;"><span style="color: rgb(35, 49, 66);"></span><span style="font-family: 微软雅黑; color: rgb(255, 255, 255);">最值得信赖的平台</span></span>
+								</div>
+							</div>
+						</div>
+						<div m-padding="0 0 34px 0" p-padding="30px 0 30px 0" css_animation_delay="0" qfyuuid="qfy_column_text_gzi64-c-cg" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-39923 qfe_text_column qfe_content_element  mobile_fontsize14 " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:30px;padding-bottom:30px;padding-right:0;padding-left:0;border-radius:0px;display:inline-block;max-width:500px;font-family:f868b6b087457e535d992f743a7606f83;">
+							<div class="qfe_wrapper">
+								<div style="line-height: 30px; margin-left: 80px; letter-spacing: 1px;"><span style="color: rgb(255, 255, 255);"><span style="font-size: 14px;">移动互联网的稳定快速发展带动了货币行业的迅速崛起，在如此庞大的货币海洋中，哪些是您所需要的货币呢？</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div m-padding="0 0 12px 0" p-padding="20px 0 10px 0" css_animation_delay="0" qfyuuid="qfy_column_text_k2izf-c-fg" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-2672 qfe_text_column qfe_content_element  mobile_fontsize14 " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:20px;padding-bottom:10px;padding-right:0;padding-left:0;border-radius:0px;">
+							<div class="qfe_wrapper" style="margin-left: 80px;">
+								<div><span style="color: rgb(10, 110, 242);">√</span><span style="color: rgb(118, 25, 240);">　</span><span style="color: rgb(255, 255, 255);">享受专属优惠券</span></div>
+							</div>
+						</div>
+						<div m-padding="0 0 12px 0" p-padding="0 0 10px 0" css_animation_delay="0" qfyuuid="qfy_column_text_k2izf" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-33317 qfe_text_column qfe_content_element  mobile_fontsize14 " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:10px;padding-right:0;padding-left:0;border-radius:0px;">
+							<div class="qfe_wrapper" style="margin-left: 80px;">
+								<div><span style="color: rgb(10, 110, 242);">√</span><span style="color: rgb(118, 25, 240);">　</span><span style="color: rgb(255, 255, 255);">用于商城消费 先用后付</span>
+								</div>
+							</div>
+						</div>
+						<div m-padding="0px 0px 30px 0px" p-padding="0 0 30px 0" css_animation_delay="0" qfyuuid="qfy_column_text_k2izf-c-u1" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-21775 qfe_text_column qfe_content_element  mobile_fontsize14 " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:30px;padding-right:0;padding-left:0;border-radius:0px;">
+							<div class="qfe_wrapper" style="margin-left: 80px;">
+								<div><span style="color: rgb(10, 110, 242);">√</span><span style="color: rgb(118, 25, 240);">　</span><span style="color: rgb(255, 255, 255);">随心付，3/6/9/12期随心付</span>
+								</div>
+							</div>
+						</div>
+						<div class="qfe_wrapper" style="margin-left: 80px;"><span></span><img width="70" height="70" src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZTA2NTU1NDVjZDY4YmIyNGZlOWVjM2E2YjMzNzhlMS5wbmc_p_p100_p_3D.png" class="front_image  attachment-full" alt="video-button" title="" description="" data-title="video-button" src-img="" style=""></div>
+					</div>
+				</div>
+			</div>
+			<lle xx_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="全球服务">
+				<div>
+					<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yMTg3ZWYyNmI2MDdiZmZlMDQ1MzgyMTNiNDYxMmRiYy5qcGc_p_p100_p_3D.jpg" />
+				</div>
+			</lle>
+		</div>
+		<template id="no1">
+			<li>
+				{{content}}
+			</li>
+		</template>
+		<template id="no2">
+			<div>
+				<h1>{{good}}</h1>
+				<div>
+				</div>
+				<div style="text-align: center; color: white; margin-top: 150px; margin-bottom: 80px;">
+					<h1>{{title}}</h1>
+					<div style="width:680px; margin: 0 auto; margin-top: 30px;">
+						{{contents}}
+					</div>
+					<div>
+						<slot></slot>
+					</div>
+				</div>
+			</div>
+		</template>
+	</body>
+	<script src="../../../1/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Vue.component('lee', {
+				template: '#no1',
+				props: ['x_content', ],
+				data() {
+					return {
+						content: this.x_content,
+
+					}
+				},
+			}),
+			Vue.component('lle', {
+				template: '#no2',
+				props: ['x_good', 'x_title', 'xx_content'],
+				data() {
+					return {
+						good: this.x_good,
+						title: this.x_title,
+						contents: this.xx_content,
+					}
+				},
+			})
+		new Vue({
+			el: '#box',
+			data: {
+				arr: [{
+						imgs: 'https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvOWNlZjc3MThhM2UzYjUwZWMwNmFlMzY2MTM2YzI2MTYucG5n.png',
+						titles: '创建账户'
+					},
+					{
+						imgs: 'https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjRkOWZhNDMyOGRiNTYxMGU0MDg5MmZiYWY0MWEzZTUucG5n.png',
+						titles: '安全保障'
+					},
+					{
+						imgs: 'https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNDg1Zjk2YWE4MmFhMzdhODgzYWM3MWVjMDgxMDA5YWQucG5n.png',
+						titles: '绑定付款'
+					}
+				]
+			}
+		})
+		window.onload = function() {
+			//定时器每秒调用一次fnDate()
+			setInterval(function() {
+				fnDate();
+			}, 1000);
+		}
+
+		function fnDate() {
+			var oDiv = document.getElementById("time");
+			var date = new Date();
+			//var year = date.getFullYear(); //当前年份
+			//var month = date.getMonth(); //当前月份
+			var data = date.getDate(); //天
+			var hours = date.getHours(); //小时
+			var minute = date.getMinutes(); //分
+			var second = date.getSeconds(); //秒
+			var time = '<p><span>00</span>天<span>' + fnW(hours) + '</span>小时<span>' + fnW(minute) + '</span>分钟<span>' + fnW(second) + '<span>秒</span></p>'
+			oDiv.innerHTML = time;
+		}
+		//补位 当某个字段不是两位数时补0
+		function fnW(str) {
+			var num;
+			str > 10 ? num = str : num = "0" + str;
+			return num;
+		}
+	</script>
+
+</html>

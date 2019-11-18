@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="swiper.css" />
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		
+		.clearfix:after,
+		.clearfix:before {
+			content: "";
+			display: table;
+		}
+		
+		.clearfix:after {
+			clear: both;
+		}
+		
+		.clearfix {
+			*zoom: 1;
+		}
+		
+		.titles a {
+			margin-left: 20px;
+			color: white;
+		}
+		
+		.first {
+			height: 670px;
+			background-image: url('https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNzdiZjlhODA2NWZhYjQ0ZDFhMDUxOTRkYTlhNjU3ODguanBn.jpg');
+			background-size: 100% 100%;
+		}
+		
+		.second {
+			height: 480px;
+			background-image: url('https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOWVmNGI2ZWIxMDQ0NTIyY2ZkNDQ5NGE3YzgwNmMyYjQuanBn.jpg');
+			background-size: 100% 100%;
+		}
+		
+		#aa {
+			font-size: 50px;
+			color: white;
+			line-height: 70px;
+		}
+		
+		h1 {
+			color: white;
+			line-height: 80px;
+			font-size: 40px;
+		}
+		
+		p {
+			font-size: 16px;
+			color: white;
+		}
+		
+		span {
+			display: inline-block;
+			font-size: 24px;
+			color: white;
+		}
+		
+		.swiper-slide {
+			width: 295px;
+			height: 209px;
+			margin-top: 40px;
+		}
+		
+		.swiper-slide img {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.swiper-button-next {
+			width: 25px;
+			height: 25px;
+			margin-top: 8px;
+		}
+		
+		.swiper-button-prev {
+			width: 25px;
+			height: 25px;
+			margin-top: 8px;
+		}
+		
+		.swiper-container {
+			height: 280px;
+		}
+		
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+		
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		
+		.no1_dianji div:hover {
+			background: blue;
+		}
+	</style>
+
+	<body>
+		<div id="box">
+			<div class="clearfix" style="height: 76px;position: fixed; top: 0; z-index: 9;">
+				<div style="width: 195px; height: 50px; float: left; line-height:75px; margin-left:150px; margin-top:10px;">
+					<img style="width: 100%; height: 100%;" class="preload-me wf-mobile-hidden" src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzM0MDdjY2U4MDk5MTljNjZhZmNjZDYxMWJkNTIxZDkucG5n.png" width="1351" height="346" alt="户外旅行">
+				</div>
+				<div class="titles" style="float: left; line-height: 75px;margin-left: 650px;">
+					<a href="#/">首页</a>
+					<a href="#/no2">关于</a>
+					<a href="#/no3">路线</a>
+					<a href="#/no4">攻略</a>
+					<a href="#/no5">联系</a>
+				</div>
+				<div style="width: 23px; height: 15px; float: left;margin-left: 60px; line-height: 75px;">
+					<img style="width: 100%; height: 100%;" class="front_image   ag_image" src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZGE4MWFlMzI1NjNiMWNhM2M1NjJlNGYyYjBmYjU5ZDEtMjN4MTUucG5n.png" alt="USA" description="" data-attach-id="48241" data-title="USA" title="" src-img="" style="">
+				</div>
+			</div>
+			<div>
+				<router-view></router-view>
+			</div>
+			<div style="background: #13304a; height: 377px;">
+				<lee>
+					<div style="width: 373px; height: 250px; background: red;">
+
+					</div>
+				</lee>
+			</div>
+		</div>
+		<template id="no1">
+			<div>
+				<div class="first" style="padding-top: 80px;">
+					<div style="width: 1280px; height: 630px;  margin-left: 140px;" class="clearfix">
+						<div style="width: 590px; height: 630px; float: left;">
+							<div style="width: 590px; height: 300px; padding-top: 100px;">
+								<!--<div id="aa"></div>
+								<p id="word" style="display:none;">
+									探索
+									山野秘境
+									发现纯粹自我
+								</p>-->
+								<h1>探索</h1>
+								<h1>山野秘境</h1>
+								<h1>发现纯粹自我</h1>
+							</div>
+							<div class="qfe_wrapper" style="margin-bottom: 100px;">
+								<div style="letter-spacing: 1px; line-height: 30px;"><span style="font-size: 13px; color: rgb(255, 255, 255);">背着背包的路上，听过许多故事<span style="font-size: 13px; color: rgb(255, 255, 255);">，</span><span style="font-size: 13px; color: rgb(255, 255, 255);">见过旅行风景</span></span><span style="font-size: 13px; color: rgb(255, 255, 255);">。</span></div>
+								<div style="letter-spacing: 1px; line-height: 30px;"><span style="font-size: 13px; color: rgb(255, 255, 255);">流转的时光，</span><span style="font-size: 13px; color: rgb(255, 255, 255);">都成为命途中的点缀，</span></div>
+								<div style="letter-spacing: 1px; line-height: 30px;"><span style="font-size: 13px; color: rgb(255, 255, 255);">不言不语都是好风景。</span></div>
+							</div>
+							<div style="height: 20px;">
+								<div style="float: left; color: white;" class="header_title" style="font-family:Oswald;font-size:16px;font-weight:normal;font-style:normal;color:#ffffff;vertical-align:bottom;">CUSTOM</div>
+								<div style="float: left; width: 15px;margin-left: 10px; border-radius: 10px; height: 5px; margin-top: 8px; background: blue;"></div>
+							</div>
+						</div>
+						<div style="width: 590px; height: 630px; float: left;">
+							<div style="height: 30px; margin-top: 100px; margin-left: 140px;">
+								<p>海拔</p>
+								<span>1650m</span>
+							</div>
+							<div style=" height: 30px; margin-top: 50px; margin-left: 140px;">
+								<p>路线</p>
+								<span>7</span>
+							</div>
+							<div style=" height: 30px; margin-top: 50px; margin-left: 140px; margin-bottom: 55px;">
+								<p>游客/年</p>
+								<span>3000+</span>
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+								</div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="no1_two" style="background: #FFFFFF;">
+					<div style="height: 530px; padding-top: 100px;">
+						<div style="width: 1290px; height: 500px; margin: 0 auto;" class="clearfix">
+							<div style="float: left;">
+								<div class="vc-inner " style="margin:0;margin-bottom:0px;padding:25px; float: left;">
+									<div class="vc_ca_post_id qfy_item_post qfyanimate   qfyanimated" data-postid="44357" data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-delay="0" data-duration="1" style="animation-duration: 1s; animation-delay: 0s; animation-name: qfyfadeInUp; visibility: visible;">
+										<div id="item_block" class="qfy_item_block item_block " style=" position: relative;">
+											<div class="item_box ">
+												<a class="item_a_link" href="https://5d0c73f87d378.t73.qifeiye.com/?post_type=products&amp;page_id=44357" title="梵净山" target="_self">
+													<div class="item_img" target="_blank" style="width: 380px; height: 240px;"><img style="width: 100%; height: 100%;" data-t-id="51608" style="" class=" ag_image" src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctODAweDUwMC5qcGc_p_p100_p_3D.jpg" alt="800 (9)" description="" data-attach-id="51608" data-title="800 (9)" title="" src-img="">
+														<div class="item_mask"></div>
+													</div>
+												</a>
+												<div class="item_wrapper clearfix">
+													<div class="item_info clearfix">
+														<div class="text_wrap">
+															<a class="item_a_link" href="https://5d0c73f87d378.t73.qifeiye.com/?post_type=products&amp;page_id=44357" title="梵净山" target="_self">
+																<div class="title ellipsis" data-title="true" style="color:#13304a;font-size:20px;font-family:微软雅黑;font-weight:700;padding-top:45px;padding-bottom:4px;">梵净山</div>
+															</a>
+															<div class="subtitle ellipsis show" style="color:#379cf4;font-size:14px;font-family:verdana;padding:10px 0px 0px 0px;">Distance:4.3km　　Days:4</div>
+															<div class="date_wrap hide" style="">
+																<span class="year" style="color:#cccccc;font-size:12px;;">2019</span>
+																<span class="md post_date" style="color:#cccccc;font-size:12px;margin-top: 15px;">05-06</span>
+															</div>
+
+															<div class="item_des show" style="max-width:px;">
+																<div class="description post_excerpt" style="width:400px; margin-top: 25px;">
+																	<p style="color:#596e80;font-size:12px;max-width:px;word-break:break-all;font-family:微软雅黑;line-height:28px;padding-top:25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...</p>
+																</div>
+															</div>
+															<div class="price_warp ellipsis hide">
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+											</div>
+											<a href="https://5d0c73f87d378.t73.qifeiye.com/?post_type=products&amp;page_id=44357" title="梵净山" target="_self" class="details item_link" style="color:#cccccc;font-size:12px;"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="vc-inner " style="margin:0;margin-bottom:0px;padding:25px; float: left;">
+									<div class="vc_ca_post_id qfy_item_post qfyanimate   qfyanimated" data-postid="44357" data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-delay="0" data-duration="1" style="animation-duration: 1s; animation-delay: 0s; animation-name: qfyfadeInUp; visibility: visible;">
+										<div id="item_block" class="qfy_item_block item_block " style=" position: relative;">
+											<div class="item_box ">
+												<a class="item_a_link" href="https://5d0c73f87d378.t73.qifeiye.com/?post_type=products&amp;page_id=44357" title="梵净山" target="_self">
+													<div class="item_img" target="_blank" style="width: 380px; height: 240px;"><img style="width: 100%; height: 100%;" data-t-id="51608" style="" class=" ag_image" src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYTMxY2EwYjEyY2ZhYTY0YTA3ZDZhNjVjMGIzYjc4NGYtODAweDUwMC5qcGc_p_p100_p_3D.jpg" alt="800 (9)" description="" data-attach-id="51608" data-title="800 (9)" title="" src-img="">
+														<div class="item_mask"></div>
+													</div>
+												</a>
+												<div class="item_wrapper clearfix">
+													<div class="item_info clearfix">
+														<div class="text_wrap">
+															<a class="item_a_link" href="https://5d0c73f87d378.t73.qifeiye.com/?post_type=products&amp;page_id=44357" title="玉龙沙湖" target="_self">
+																<div class="title ellipsis" data-title="true" style="color:#13304a;font-size:20px;font-family:微软雅黑;font-weight:700;padding-top:45px;padding-bottom:4px;">玉龙沙湖</div>
+															</a>
+															<div class="subtitle ellipsis show" style="color:#379cf4;font-size:14px;font-family:verdana;padding:10px 0px 0px 0px;">Distance:3.8km　　Days:2</div>
+															<div class="date_wrap hide" style="">
+																<span class="year" style="color:#cccccc;font-size:12px;;">2019</span>
+																<span class="md post_date" style="color:#cccccc;font-size:12px;margin-top: 15px;">05-06</span>
+															</div>
+
+															<div class="item_des show" style="max-width:px;">
+																<div class="description post_excerpt" style="width:400px; margin-top: 25px;">
+																	<p style="color:#596e80;font-size:12px;max-width:px;word-break:break-all;font-family:微软雅黑;line-height:28px;padding-top:25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...</p>
+																</div>
+															</div>
+															<div class="price_warp ellipsis hide">
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+											</div>
+											<a href="https://5d0c73f87d378.t73.qifeiye.com/?post_type=products&amp;page_id=44357" title="梵净山" target="_self" class="details item_link" style="color:#cccccc;font-size:12px;"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="float: left; margin-bottom: 50px;">
+								<h2 style="margin-top: 25px; margin-left: 50px; font-size: 30px; margin-bottom: 25px;">RECOMM</h2>
+								<div class="clearfix" style="margin-bottom: 60px;">
+									<h2 style="margin-left: 50px; line-height: 39px; float: left; font-size: 14px; float: left;">精选当季热门目的地</h2>
+									<div style="float: left; width: 15px;border-radius: 10px; margin-left: 15px; height: 5px; margin-top: 18px; background: blue;"></div>
+								</div>
+								<span style="color: rgb(19, 48, 74); display: inline-block; width: 314px; height: 108px; margin: 0  auto; font-size: 14px; line-height: 40px;">偶尔为街头独特的风景驻足，偶尔因高山流水的美丽停留，偶尔被惊鸿一瞥的美丽吸引；或者在春暖花开时，或者在河边放下一盏写着心愿的河灯，祝愿一切安好。</span>
+							</div>
+							<div class="clearfix">
+								<div class="no1_dianji" style="width: 80px; height: 50px; float: left;">
+									<div style="line-height: 50px; text-align: center; width:40px; height: 50px; background: #C7DDEF; font-size: 26px; color: white; float: left;">
+										< </div>
+											<div style="line-height: 50px; text-align: center; width:40px; height: 50px; background: #00CCFF; font-size: 26px; color: white; float: left;">
+												>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+
+				</div>
+			</div>
+		</template>
+		<template id="no2">
+			<div>
+				<div class="second">
+
+				</div>
+			</div>
+		</template>
+		<template id="no3">
+			<div>
+				<div class="second">
+
+				</div>
+			</div>
+		</template>
+		<template id="no4">
+			<div>
+				<div class="second">
+
+				</div>
+			</div>
+		</template>
+		<template id="no5">
+			<div>
+				<div class="second">
+
+				</div>
+			</div>
+		</template>
+		<template id="no">
+			<div class="clearfix">
+				555555555
+				<!--<div style="width: 400px; height: 162px; background: red; float: left; margin-left: 200px; margin-top: 50px;">
+					<h2 style="color: white; margin-bottom: 25px;">TRAVEL</h2>
+					<div style="width: 400px;">
+						<span style="display: inline-block; font-size: 16px; line-height: 25px;">我公司会以安全、快乐、环保为理念，以敬业、诚信、善良为本，期待与全国各地的户外公司、户外俱乐部、旅行社进行合作。</span>
+					</div>
+				</div>
+				<div style="width: 370px; height: 161px;">
+					<h2 style="color: white; margin-bottom: 25px;">TRAVEL</h2>
+				</div>-->
+			</div>
+		</template>
+	</body>
+	<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vue-router.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swiper.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//组件
+		Vue.component('lee', {
+			template: '#no',
+			props: [''],
+			mounted() {
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					slidesPerGroup: 1,
+					loop: true,
+					loopFillGroupWithBlank: true,
+					autoplay: {
+						delay: 3000,
+						stopOnLastSlide: false,
+						disableOnInteraction: true,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			},
+			data() {
+				return {
+
+				}
+			}
+		})
+		//路由
+		var no1 = {
+			template: '#no1'
+		}
+		var no2 = {
+			template: '#no2'
+		}
+		var no3 = {
+			template: '#no3'
+		}
+		var no4 = {
+			template: '#no4'
+		}
+		var no5 = {
+			template: '#no5'
+		}
+		var routes = [{
+			path: '/',
+			component: no1
+		}, {
+			path: '/no2',
+			component: no2
+		}, {
+			path: '/no3',
+			component: no3
+		}, {
+			path: '/no4',
+			component: no4
+
+		}, {
+			path: '/no5',
+			component: no5
+		}]
+		var router = new VueRouter({
+			routes
+		})
+		new Vue({
+			el: '#box',
+			router,
+
+		})
+		//轮播图
+
+		//		var index = 0;
+		//		var word = document.getElementById("word").innerHTML;
+		//
+		//		function type() {
+		//			document.getElementById("aa").innerText = word.substring(0, index++);
+		//		}
+		//		setInterval(type, 75);
+	</script>
+
+</html>
